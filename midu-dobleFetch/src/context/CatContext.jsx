@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from 'react'
 import { fetchCatFact, fetchRandomFact } from '../services/fetch'
+const API_KEY = import.meta.env.VITE_APIKEY
 
 export const catFactContext = createContext()
 const { Provider } = catFactContext
@@ -9,7 +10,7 @@ const CatContext = ({ children }) => {
   const [cat, setCat] = useState()
 
   const baseUrlFact = 'https://catfact.ninja/facts'
-  const baseUrlCat = 'https://api.giphy.com/v1/gifs/search?api_key=wNBFfTMaAur3bol88wvJTrgDnr46w0RH&q='
+  const baseUrlCat = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=`
 
   const handleFact = (fact) => {
     setFact(fact)

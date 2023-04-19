@@ -17,6 +17,3 @@ export const fetchCatFact = (url, fact, handleCat) => {
       handleCat(data)
     })
 }
-
-// EjvyjvHCohfvyDwt0JONvqHQFfjFnsUQ
-// https://api.giphy.com/v1/gifs/search?api_key=wNBFfTMaAur3bol88wvJTrgDnr46w0RH&q=gato&limit=25&offset=0&rating=g&lang=en
