@@ -9,7 +9,7 @@ const CatContext = ({ children }) => {
   const [cat, setCat] = useState()
 
   const baseUrlFact = 'https://catfact.ninja/facts'
-  const baseUrlCat = 'https://cataas.com/cat/says/'
+  const baseUrlCat = 'https://api.giphy.com/v1/gifs/search?api_key=wNBFfTMaAur3bol88wvJTrgDnr46w0RH&q='
 
   const handleFact = (fact) => {
     setFact(fact)
